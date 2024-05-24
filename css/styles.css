@@ -1,0 +1,191 @@
+/* Declare the font-face */
+@font-face {
+    font-family: 'wordFont';
+    src: url('fonts/wordFont.ttf')
+}
+@font-face {
+    font-family: 'wordFont2';
+    src: url('fonts/wordFont2.ttf')
+}
+
+@font-face {
+    font-family: 'wordFontLightItalic';
+    src: url('fonts/WordFontExtraLightItalic.ttf')
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+  width: 800px;
+  margin: 0 auto;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 16px
+}
+
+nav{
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.siteName{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+.siteName i {
+    font-size: 24px;
+    color: #0575ff;
+    padding-right: 8px;
+}
+.siteName h6{
+    color: #1f1f1f;
+    font-family: 'wordFont2', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.links{
+    margin-left: 10px;
+    padding: 0;
+    margin-top: 5px;
+}
+#wordOfTheDayLink,
+#randomWordLink{
+    color: #ccc;
+    text-decoration: none;
+    padding-left: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#wordOfTheDayLink:hover,
+#randomWordLink:hover{
+    color: #aaa;
+}
+.navbar {
+    background-color: #0052b7;
+    color: white;
+}
+.nav-link, .navbar-brand{
+    color: white;
+}
+
+
+.maincontent{
+    width: 100%;
+    margin: 0 auto;
+}
+
+.definitions-holder{
+    padding: 5px;
+}
+
+.searchword-holder{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.searchword-holder form{
+    border-radius: 40px;
+    background-color: #f6f6f6;
+    width: 100%;
+    min-width: 300px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.searchword-holder form #searchinput{
+    border: none;
+    padding: 10px;
+    outline: none;
+    width: 100%;
+    background-color: #ffffff00;
+    font-size: 18px;
+    padding-left: 20px;
+
+}
+.searchword-holder form #searchinput::placeholder{
+    font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #999;
+    font-size: 18px;
+}
+
+.searchword-holder form #searchbtn {
+    font-size: 32px;
+    color: #0575ff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    position: absolute;
+    right: 10px;
+}
+
+.searchword-holder form #searchbtn:hover{
+    color: #0052b7;
+}
+
+#wordheading {
+    font-family: 'wordFont2', sans-serif;
+    font-size: 40px;
+}
+
+.italic{
+    font-family: 'wordFontLightItalic', sans-serif;
+    color: #ccc;
+}
+
+.word-sec{
+    margin-bottom: 50px;
+}
+
+.word-link{
+    color: #0575ff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.word-link:hover{
+    color: #0052b7;
+}
+
+
+@media (max-width:840px){
+    html, body {
+        height: 100%;
+        width: 100%;
+        margin: 0 auto;
+      }
+    nav{
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    }
+
+    .searchword-holder{
+        height: 60px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+    }
+
+    .definitions-holder{
+        padding: 0 20px;
+    }
+    
+}

@@ -1,0 +1,18 @@
+# dependencies
+/node_modules
+
+# config files
+js/config.js
+
+# macOS
+.DS_Store
+
+# Logs
+/logs
+
+# Build results
+/dist
+*.log
+
+# Environment
+.env
