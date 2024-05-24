@@ -2,7 +2,7 @@
 /node_modules
 
 # config files
-js/config.js
+# js/config.js
 
 # macOS
 .DS_Store
